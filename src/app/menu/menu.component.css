@@ -1,0 +1,7 @@
+mat-panel-title{
+    color: #FF3879!important;
+}
+mat-expansion-panel-header {
+    cursor: pointer;
+    background-color: #ffe9f2 !important;
+}
