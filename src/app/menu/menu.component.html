@@ -1,58 +1,214 @@
-<mat-accordion>
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                         (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          CLASSIC CUPCAKES
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <p>I'm visible because I am open</p>
-    </mat-expansion-panel>
-  </mat-accordion>
-  <br>
-<mat-accordion>
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                         (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          CUSTOM CUPCAKES
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <p>I'm visible because I am open</p>
-    </mat-expansion-panel>
-</mat-accordion>
-<br>
-<mat-accordion>
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                         (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          CUSTOM CAKES
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <p>I'm visible because I am open</p>
-    </mat-expansion-panel>
-</mat-accordion>
-<br>
-<mat-accordion>
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                         (closed)="panelOpenState = false">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          STRAWBERRIES
-        </mat-panel-title>
-        <mat-panel-description>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <p>I'm visible because I am open</p>
-    </mat-expansion-panel>
-</mat-accordion>
-<br>
+<div class="menu">
+  <h4 class="page-title">Menu</h4>
+</div>
 
-  
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CLASSIC CUPCAKES
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <br>
+    <mat-tab-group>
+      <mat-tab label="Flavors">
+       <br>
+        <div class="menu-text" *ngFor="let c of classicCupcakes[0].flavors">
+         {{c}} 
+        </div>
+      </mat-tab>
+      <mat-tab label="Prices">
+        <br>
+        <div class="menu-text" *ngFor="let u of classicCupcakes[0].price">
+          {{u.title}} .......... {{u.price}}
+         </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-expansion-panel>
+</mat-accordion>
+<br>
+<mat-divider></mat-divider>
+<br>
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CUSTOM CUPCAKES
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <br>
+    <mat-tab-group>
+      <mat-tab label="Flavors">
+       <br>
+        <div class="menu-text" *ngFor="let p of customCupcakes[0].flavors">
+          {{p}} 
+         </div>
+      </mat-tab>
+      <mat-tab label="Prices">
+        <br>
+        <div class="menu-text" *ngFor="let c of customCupcakes[0].price">
+          {{c.title}} .......... {{c.price}}
+         </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-expansion-panel>
+</mat-accordion>
+<br>
+<mat-divider></mat-divider>
+<br>
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CUSTOM CAKES
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <br>
+    <mat-tab-group>
+      <mat-tab label="Flavors">
+       <br>
+        <div  class="menu-text" *ngFor="let p of customCakes[0].flavors">
+          {{p}} 
+         </div>
+      </mat-tab>
+      <mat-tab label="Prices">
+        <br>
+        <div class="menu-text"  *ngFor="let c of customCakes[0].price">
+          {{c.title}} .......... {{c.price}}
+         </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-expansion-panel>
+</mat-accordion>
+<br>
+<mat-divider></mat-divider>
+<br>
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        STRAWBERRIES
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <br>
+    <mat-tab-group>
+      <mat-tab label="Flavors">
+       <br>
+        <div class="menu-text" *ngFor="let p of strawberry[0].flavors">
+          {{p}} 
+         </div>
+      </mat-tab>
+      <mat-tab label="Prices">
+        <br>
+        <div class="menu-text" *ngFor="let c of strawberry[0].price">
+          {{c.title}} .......... {{c.price}}
+         </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-expansion-panel>
+</mat-accordion>
+<br>
+<mat-divider></mat-divider>
+<br>
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CUSTOM STRAWBERRIES
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <br>
+    <mat-tab-group>
+      <mat-tab label="Prices">
+        <br>
+        <div class="menu-text" *ngFor="let c of customStrawberry[0].price">
+          {{c.title}} .......... {{c.price}}
+         </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-expansion-panel>
+</mat-accordion>
+<br>
+<mat-divider></mat-divider>
+<br>
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CLASSIC CAKES
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <br>
+    <mat-tab-group>
+      <mat-tab label="Flavors">
+       <br>
+        <div class="menu-text" *ngFor="let p of classicCakes[0].flavors">
+          {{p}} 
+         </div>
+      </mat-tab>
+      <mat-tab label="Prices">
+        <br>
+        <div class="menu-text" *ngFor="let c of classicCakes[0].price">
+          {{c.title}} .......... {{c.price}}
+         </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-expansion-panel>
+</mat-accordion>
+<br>
+<mat-divider></mat-divider>
+<br>
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CAKE POPS
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <br>
+    <mat-tab-group>
+      <mat-tab label="Flavors">
+       <br>
+        <div class="menu-text" *ngFor="let p of cakePops[0].flavors">
+          {{p}} 
+         </div>
+      </mat-tab>
+      <mat-tab label="Prices">
+        <br>
+        <div class="menu-text" *ngFor="let c of cakePops[0].price">
+          {{c.title}} .......... {{c.price}}
+         </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-expansion-panel>
+</mat-accordion>
+<br>
+<mat-divider></mat-divider>
+<br>
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CAKE JAR 12OZ
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <br>
+
+  </mat-expansion-panel>
+</mat-accordion>
