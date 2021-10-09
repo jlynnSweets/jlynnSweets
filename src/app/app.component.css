@@ -5,7 +5,7 @@
   width: max-content;
 }
 ::ng-deep mat-icon-button{
-  width: max-content !important;
+  width: 60px !important;
 }
 .example-container {
     width: 100%;
