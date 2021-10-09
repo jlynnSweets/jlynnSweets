@@ -7,6 +7,9 @@
 ::ng-deep mat-icon-button{
   width: 60px !important;
 }
+.icon-button{
+  width:60px !important; 
+}
 .example-container {
     width: 100%;
     height: 100%;
