@@ -11,7 +11,7 @@ import {
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
-// import {} from '../../assets/images/IMG_2038.jpeg'
+// import {} from 'assets/images/IMG_2038.jpeg'
 export class GalleryComponent implements OnInit {
   images: GalleryItem[];
   constructor() {
@@ -28,46 +28,46 @@ export class GalleryComponent implements OnInit {
     // Set gallery items array
     this.images = [
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/doublestrawberry.JPG',
+        src: 'assets/images/jlynnsweets/doublestrawberry.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/keylime.JPG',
+        src: 'assets/images/jlynnsweets/keylime.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/oreo.JPG',
+        src: 'assets/images/jlynnsweets/oreo.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/choco.JPG',
+        src: 'assets/images/jlynnsweets/choco.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/twix.JPG',
+        src: 'assets/images/jlynnsweets/twix.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/sprinkle.JPG',
+        src: 'assets/images/jlynnsweets/sprinkle.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/strawberry.JPG',
+        src: 'assets/images/jlynnsweets/strawberry.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/fruitypebbles.JPG',
+        src: 'assets/images/jlynnsweets/fruitypebbles.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/bananna.JPG',
+        src: 'assets/images/jlynnsweets/bananna.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/redvelvet.JPG',
+        src: 'assets/images/jlynnsweets/redvelvet.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/vanilla.JPG',
+        src: 'assets/images/jlynnsweets/vanilla.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/confetti.JPG',
+        src: 'assets/images/jlynnsweets/confetti.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/4count.JPG',
+        src: 'assets/images/jlynnsweets/4count.JPG',
       }),
       new ImageItem({
-        src: '../../assets/images/jlynnsweets/.JPG',
+        src: 'assets/images/jlynnsweets/.JPG',
       }),
     ];
   }
