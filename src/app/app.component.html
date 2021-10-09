@@ -4,11 +4,10 @@
   <button (click)="drawer.toggle()"  mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon class="icon-class">menu</mat-icon>
   </button>
+  <img class="logo" src="../assets/images/jlynnsweets/output-onlinejpgtools (1).png">
   <span style="color: rgb(68, 68, 64)">Jlynn's Sweets & Treats</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon class="icon-class">share</mat-icon>
-  </button>
+
 </mat-toolbar>
 </nav>
 
@@ -36,7 +35,13 @@
   <br>
   <div>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <a class="button link" routerLink="/order">Order</a> 
+    <a class="button link" routerLink="/order" disabled>Order</a> 
+  </button>  
+  </div>
+  <br>
+  <div>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <a class="button link" routerLink="/gallery">Gallery</a> 
   </button>  
   </div>
 
@@ -47,4 +52,8 @@
   </div>
 
 </mat-drawer-container>
+
+<footer style="height:100px;">
+
+</footer>
 

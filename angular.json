@@ -70,9 +70,11 @@
           "configurations": {
             "production": {
               "browserTarget": "jlynnssweetsandtreats:build:production"
+  
             },
             "development": {
               "browserTarget": "jlynnssweetsandtreats:build:development"
+            
             }
           },
           "defaultConfiguration": "development"

@@ -21,6 +21,8 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "angular-cli-ghpages": "^1.0.0-rc.2",
+    "angular-gallery": "^1.0.2",
+    "ng-gallery": "^5.0.0",
     "rxjs": "~6.6.0",
     "save-dev": "0.0.1-security",
     "tslib": "^2.3.0",

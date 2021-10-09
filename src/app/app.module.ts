@@ -9,6 +9,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule  } from './material.module';
 import { RouterModule } from '@angular/router'; 
+import { ReactiveFormsModule } from '@angular/forms';  
+import { HttpClientModule } from "@angular/common/http";
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from "@angular/material/input";
+import { GalleryModule } from 'ng-gallery';
+import { GALLERY_CONFIG } from 'ng-gallery';
+import { GalleryComponent } from './gallery/gallery.component'
 
 @NgModule({
   declarations: [
@@ -16,16 +23,28 @@ import { RouterModule } from '@angular/router';
     MenuComponent,
     ContactComponent,
     AboutComponent,
-    OrderComponent 
+    OrderComponent,
+    GalleryComponent  
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    NoopAnimationsModule,
+    MatInputModule,
+    GalleryModule
   ],
-  providers: [],
+  providers: [    {
+    provide: GALLERY_CONFIG,
+    useValue: {
+      dots: true,
+      imageSize: 'cover'
+    }
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
