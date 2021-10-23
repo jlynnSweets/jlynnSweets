@@ -14,6 +14,9 @@
 .center-text {
 	text-align: center
 }
+.page-title{
+  text-align:center;
+}
 form.contact {
 	display: flex;
 	flex-direction: column;
@@ -48,8 +51,16 @@ button:hover:enabled{
 .container{
  display: flex;
 justify-content: center; 
+
 }
 
+.ic{
+  background-color: #ffe9f2;
+ width: 90%;
+ padding:5px;
+ word-wrap: break-word;
+ text-align:center !important;
+}
 .example-card {
   max-width: 400px;
 }

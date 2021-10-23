@@ -6,10 +6,10 @@
   font-size: 19px;
 }
 ::ng-deep mat-icon-button{
-  width: 60px !important;
+width:100% !important;
 }
 .icon-button{
-  width:60px !important; 
+  width:100% !important;
 }
 .container{
   display: flex;
