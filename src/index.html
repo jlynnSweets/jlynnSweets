@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Jlynnssweetsandtreats</title>
   <base href="https://jlynnsweets.github.io/jlynnSweets/">
-
+  <!-- <base href="/">  -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,4 +17,17 @@
 <body class="mat-typography">
   <app-root></app-root>
 </body>
+<script>
+  (function (d, s, id) {
+    var js;
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://embedsocial.com/cdn/ht.js";
+    d.getElementsByTagName("head")[0].appendChild(js);
+  }(document, "script", "EmbedSocialHashtagScript"));
+
+</script>
 </html>
