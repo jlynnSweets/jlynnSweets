@@ -15,7 +15,12 @@ export class ContactComponent implements OnInit {
   submitted: boolean = false; // show and hide the success message
   isLoading: boolean = false; // disable the submit button if we're loading
   responseMessage?: string; // the response message to show to the user'
-
+  longText = `Jlynn’s Sweets ‘N’ Treats 🧁💗
+  Product/Service
+  DM to Order💗
+  Please Read All Highlights Before Ordering!
+  Deposit Required 💓Non Refundable
+  Valdosta GA 💓`;
   constructor(private formbuilder: FormBuilder, private http: HttpClient ) {
       this.form = this.formbuilder.group({
     name: this.name,

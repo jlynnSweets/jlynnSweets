@@ -45,7 +45,31 @@ button:hover:enabled{
 	color: #ff3858;
 	background-color: #ffe9f2;
 }
+.container{
+ display: flex;
+justify-content: center; 
+}
 
+.example-card {
+  max-width: 400px;
+}
+.fa-instagram {
+  background: #ffe9f2;
+  color: white;
+  box-shadow: rgb(0 0 0 / 52%) 0px 1px 5px;
+}
+.fa {
+  padding: 20px;
+  font-size: 57px;
+  width: 65px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+  border-radius: 12px;
+}
+a{
+  color:rgb(68, 68, 64) !important;
+}
 ::ng-deep .mat-form-field-invalid .mat-input-element {
   color:rgb(68, 68, 64) !important;
 

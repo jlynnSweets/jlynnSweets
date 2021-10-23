@@ -23,7 +23,7 @@ export class MenuComponent implements OnInit {
       'Red Velvet w/ Cream Cheese',
       'Key Lime',
       'Lemon Swirl',
-      'Cookie Dought',
+      'Cookie Dough',
       'Fruity Pebble',
       'Red Velvet w/ fried Oreos'
     ],

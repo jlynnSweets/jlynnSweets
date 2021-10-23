@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'jlynnssweetsandtreats';
   showFiller = false;
+  reload(){
+   window.location.reload();
+}
 }
