@@ -15,7 +15,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from "@angular/material/input";
 import { GalleryModule } from 'ng-gallery';
 import { GALLERY_CONFIG } from 'ng-gallery';
-import { GalleryComponent } from './gallery/gallery.component'
+import { GalleryComponent } from './gallery/gallery.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GalleryComponent } from './gallery/gallery.component'
     ContactComponent,
     AboutComponent,
     OrderComponent,
-    GalleryComponent  
+    GalleryComponent,
+    HomeComponent  
 
   ],
   imports: [

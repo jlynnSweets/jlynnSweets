@@ -1,9 +1,11 @@
 .soon{
     color: rgb(68, 68, 64) !important;
-    font-weight: 700 !important; 
+    font-weight: 800 !important; 
+    font-family: 'Amatic SC';
   }
 ::ng-deep mat-card{
   box-shadow: rgb(0 0 0 / 52%) 0px 1px 5px !important; 
+  font-family: 'Amatic SC';
 }
 .hidden {
 	display: none
@@ -12,10 +14,13 @@
 	display: block
 }
 .center-text {
-	text-align: center
+	text-align: center;
+  font-family: 'Amatic SC';
 }
 .page-title{
   text-align:center;
+  font-family: 'Amatic SC';
+  font-weight: 900;
 }
 form.contact {
 	display: flex;
@@ -24,6 +29,7 @@ form.contact {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
+  font-family: 'Amatic SC';
 }
 input,
 button {
@@ -42,7 +48,8 @@ button {
   height: 40px;
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 52%) 0px 1px 5px;
-  font-weight: 700;
+  font-weight: 800;
+  font-family: 'Amatic SC';
 }
 button:hover:enabled{
 	color: #ff3858;
@@ -51,18 +58,20 @@ button:hover:enabled{
 .container{
  display: flex;
 justify-content: center; 
-
+font-family: 'Amatic SC';
 }
 
 .ic{
   background-color: #ffe9f2;
- width: 90%;
+ width: 97%;
  padding:5px;
  word-wrap: break-word;
  text-align:center !important;
+ font-family: 'Amatic SC';
 }
 .example-card {
-  max-width: 400px;
+  max-width: 350px;
+  font-family: 'Amatic SC';
 }
 .fa-instagram {
   background: #ffe9f2;

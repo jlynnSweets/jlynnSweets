@@ -1,16 +1,19 @@
 mat-panel-title{
     color: rgb(68, 68, 64) !important;
-    font-weight: 600 !important;
+    font-weight: 800 !important;
+    font-family: 'Amatic SC';
 }
 mat-expansion-panel-header {
     cursor: pointer;
     background-color: #ffe9f2 !important;
+    font-family: 'Amatic SC';
 }
 ::ng-deep .mat-ink-bar{
     background-color: #FF3879 !important;
 }
 .menu{
     text-align: center;
+    font-family: 'Amatic SC';
 }
 ::ng-deep .mat-tab-header-pagination {
     display: none !important;
@@ -20,11 +23,13 @@ mat-expansion-panel-header {
     min-width: 40px!important;
     padding: 3px!important;
     margin: 3px!important;
+    font-family: 'Amatic SC';
 }
 .page-title{
     font-size: 30px;
     color: rgb(68, 68, 64) !important;
-    font-weight: 600;
+    font-weight: 900;
+    font-family: 'Amatic SC';
 }
 ::ng-deep .mat-expansion-indicator::before{
     color: #FF3879 !important;
@@ -33,6 +38,7 @@ mat-expansion-panel-header {
     color: #FF3879 !important;
 }
 .menu-text{
-    font-weight: 500;
+    font-weight: 700;
     color: rgb(68, 68, 64) !important;
+    font-family: 'Amatic SC';
 }

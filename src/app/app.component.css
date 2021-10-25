@@ -4,6 +4,7 @@
   font-weight: 900 !important;
   width: max-content;
   font-size: 19px;
+  font-family: 'Amatic SC';
 }
 ::ng-deep mat-icon-button{
 width:100% !important;
