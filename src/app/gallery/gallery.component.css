@@ -7,7 +7,12 @@
     margin:auto;
     margin-top: 4%;
 }
-
+::ng-deep .light #es-header .es-title{
+  color:rgb(68, 68, 64) !important;
+}
+::ng-deep .dark #es-header .es-title{
+  color:#fafafa !important;
+}
 @media (max-width: 380px) {
     ::ng-deep   gallery-image {
      width: 90% !important;

@@ -5,16 +5,16 @@
       <mat-icon class="icon-class">menu</mat-icon>
     </button>
     <img class="logo" routerLink="/home" src="assets/output-onlinejpgtools (1).png">
-    <span style="color: rgb(68, 68, 64);font-family: 'Amatic SC';font-weight: 900;">Jlynn's Sweets & Treats</span>
+    <span style="color: rgb(68, 68, 64);font-family: 'Amatic SC';font-weight: 900;font-size: 30px;">Jlynn's Sweets & Treats</span>
     <span class="example-spacer"></span>
     <i class="far fa-sun"></i>
   </mat-toolbar>
 </nav>
 
 
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container [ngClass]="theme ? 'light' : 'dark'" class="example-container" autosize>
 
-  <mat-drawer #drawer class="example-sidenav" mode="side">
+  <mat-drawer  [ngStyle]="{'background-color': theme ? '#fafafa' : '#3e3e3e'}" #drawer class="example-sidenav" mode="side">
     <div>
       <button mat-icon-button class="example-icon favorite-icon icon-button"
         aria-label="Example icon-button with heart icon">
@@ -42,16 +42,18 @@
         <div class="container"><a class="button link icon-button" routerLink="/contact">Contact</a> </div>
       </button>
     </div>
-    <!-- <div>
-    <button mat-icon-button class="example-icon favorite-icon icon-button" aria-label="Example icon-button with heart icon">
-    <div class="container"><a class="button link icon-button" routerLink="/order" disabled>Order</a> </div>  
-  </button>  
-  </div> -->
     <br>
     <div>
-      <button mat-icon-button (click)="reload()" class="example-icon favorite-icon icon-button"
+      <button mat-icon-button (click)="drawer.toggle();reload();" class="example-icon favorite-icon icon-button"
         aria-label="Example icon-button with heart icon">
         <div class="container"><a class="button link icon-button" routerLink="/gallery">Gallery</a> </div>
+      </button>
+    </div>
+    <br>
+    <div>
+      <button mat-icon-button class="example-icon favorite-icon icon-button" (click)="changeTheme()"
+        aria-label="Example icon-button with heart icon">
+       <h3 class="theme"><b>{{theme ? 'Light' : 'Dark'}}</b></h3> 
       </button>
     </div>
 

@@ -1,44 +1,62 @@
-.soon{
-    color: rgb(68, 68, 64) !important;
-    font-weight: 800 !important; 
-    font-family: 'Amatic SC';
-  }
-::ng-deep mat-card{
-  box-shadow: rgb(0 0 0 / 52%) 0px 1px 5px !important; 
+.soon {
+  color: rgb(68, 68, 64) !important;
+  font-weight: 800 !important;
   font-family: 'Amatic SC';
 }
+
+::ng-deep mat-card {
+  box-shadow: rgb(0 0 0 / 52%) 0px 1px 5px !important;
+  font-family: 'Amatic SC';
+}
+
 .hidden {
-	display: none
+  display: none
 }
+
 .visible {
-	display: block
+  display: block
 }
+
 .center-text {
-	text-align: center;
+  text-align: center;
   font-family: 'Amatic SC';
 }
-.page-title{
-  text-align:center;
+
+::ng-deep .light .page-title {
+  font-size: 30px;
+  color: rgb(68, 68, 64) !important;
+  font-weight: 800;
   font-family: 'Amatic SC';
-  font-weight: 900;
+  text-align: center;
 }
+
+::ng-deep .dark .page-title {
+  font-size: 30px;
+  color: #fafafa !important;
+  font-weight: 800;
+  font-family: 'Amatic SC';
+  text-align: center;
+}
+
 form.contact {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   font-family: 'Amatic SC';
 }
+
 input,
 button {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 button {
-	margin-top: 10px;
-	background-color: transparent;
-	color:  rgb(68, 68, 64);
+  margin-top: 10px;
+  background-color: transparent;
+  color: rgb(68, 68, 64);
   border: none;
   padding: 4px 16px;
   transition: 0.4s;
@@ -51,33 +69,84 @@ button {
   font-weight: 800;
   font-family: 'Amatic SC';
 }
-button:hover:enabled{
-	color: #ff3858;
-	background-color: #ffe9f2;
-}
-.container{
- display: flex;
-justify-content: center; 
-font-family: 'Amatic SC';
+
+
+button:hover:enabled {
+  color: #ff3858;
+  background-color: #ffe9f2;
 }
 
-.ic{
-  background-color: #ffe9f2;
- width: 97%;
- padding:5px;
- word-wrap: break-word;
- text-align:center !important;
- font-family: 'Amatic SC';
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Amatic SC';
 }
-.example-card {
+
+::ng-deep .light .icc {
+  background-color: #ffe9f2 !important;
+}
+
+::ng-deep .dark .icc {
+  background-color: #FF3879 !important;
+}
+
+::ng-deep .light .ic {
+  background-color: #ffe9f2;
+  padding: 5px;
+  word-wrap: break-word;
+  text-align: center !important;
+  font-family: 'Amatic SC';
+  width: 97%;
+  word-wrap: break-word;
+  text-align: center !important;
+  color: rgb(68, 68, 64) !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+::ng-deep .dark .ic {
+  background-color: #FF3879 !important;
+  padding: 5px;
+  word-wrap: break-word;
+  text-align: center !important;
+  font-family: 'Amatic SC';
+  width: 97%;
+  word-wrap: break-word;
+  text-align: center !important;
+  color: #fafafa !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.light .example-card {
   max-width: 350px;
   font-family: 'Amatic SC';
 }
+
+::ng-deep .light .example-card {
+  max-width: 350px;
+  font-family: 'Amatic SC';
+  background-color: #fafafa;
+  color: rgb(68, 68, 64);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+::ng-deep .dark .example-card {
+  max-width: 350px;
+  font-family: 'Amatic SC';
+  background-color: #3e3e3e;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 18px;
+}
+
 .fa-instagram {
   background: #ffe9f2;
   color: white;
   box-shadow: rgb(0 0 0 / 52%) 0px 1px 5px;
 }
+
 .fa {
   padding: 20px;
   font-size: 57px;
@@ -87,37 +156,38 @@ font-family: 'Amatic SC';
   /* margin: 5px 2px; */
   border-radius: 12px;
 }
-a{
-  color:rgb(68, 68, 64) !important;
+
+a {
+  color: rgb(68, 68, 64) !important;
 }
+
 ::ng-deep .mat-form-field-invalid .mat-input-element {
-  color:rgb(68, 68, 64) !important;
+  color: rgb(68, 68, 64) !important;
 
 }
-::ng-deep  .mat-input-element {
-  color:rgb(68, 68, 64) !important;
+
+::ng-deep .mat-input-element {
+  color: rgb(68, 68, 64) !important;
   margin-bottom: 20px;
 }
+
 ::ng-deep .mat-focused .mat-form-field-label {
   /*change color of label*/
-  color:rgb(68, 68, 64) !important;
- }
+  color: rgb(68, 68, 64) !important;
+}
 
- ::ng-deep.mat-form-field-underline {
+::ng-deep.mat-form-field-underline {
   /*change color of underline*/
   background-color: rgb(68, 68, 64) !important;
-} 
+}
 
 ::ng-deep.mat-form-field-ripple {
- /*change color of underline when focused*/
- background-color: #ff3858 !important;;
+  /*change color of underline when focused*/
+  background-color: #ff3858 !important;
+  ;
 }
-.menu{
+
+.menu {
   text-align: center;
-  margin-top:10px;
-}
-.page-title{
-  font-size: 30px;
-  color: rgb(68, 68, 64) !important;
-  font-weight: 600;
+  margin-top: 10px;
 }

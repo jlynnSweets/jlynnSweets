@@ -4,7 +4,8 @@
   font-family: 'Amatic SC';
 }
 ::ng-deep mat-card{
-box-shadow: rgb(0 0 0 / 52%) 0px 1px 5px !important; 
+  border-radius: 0px !important;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px !important;
 }
 .hidden {
 display: none
@@ -111,10 +112,28 @@ text-align: center;
 margin-top:10px;
 font-family: 'Amatic SC';
 }
-.page-title{
-font-size: 30px;
-color: rgb(68, 68, 64) !important;
-font-weight: 900;
-font-family: 'Amatic SC';
-font-size: 29px;
+::ng-deep .light .page-title{
+  font-size: 30px;
+  color: rgb(68, 68, 64) !important;
+  font-weight: 800;
+  font-family: 'Amatic SC';
+  text-align: center;
+}
+::ng-deep .dark .page-title{
+  font-size: 30px;
+  color: #fafafa !important;
+  font-weight: 800;
+  font-family: 'Amatic SC';
+  text-align: center;
+}
+::ng-deep .light .mat-card{
+  background-color: #fafafa !important;
+  color:rgb(68, 68, 64);
+  font-weight: 600;
+}
+
+::ng-deep .dark  .mat-card{
+  background-color: #3e3e3e !important;
+  color: #fafafa;
+  font-weight: 600;
 }

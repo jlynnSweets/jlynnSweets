@@ -1,10 +1,29 @@
-.ic{
-    background-color: #ffe9f2;
-   padding:5px;
-   word-wrap: break-word;
-   text-align:center !important;
-   font-family: 'Amatic SC';
-   margin-left: 20px;
-   width: 70px;
-   margin-top: 20px;
-  }
+::ng-deep .light .ih {
+  background-color: #ffe9f2;
+  padding: 5px;
+  word-wrap: break-word;
+  text-align: center !important;
+  font-family: 'Amatic SC';
+  margin-left: 20px;
+  width: 70px;
+  margin-top: 20px;
+  color: rgb(68, 68, 64) !important;
+  font-weight: 700;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px !important;
+  font-size: 18px;
+}
+
+::ng-deep .dark .ih {
+  background-color: #FF3879 !important;
+  padding: 5px;
+  word-wrap: break-word;
+  text-align: center !important;
+  font-family: 'Amatic SC';
+  margin-left: 20px;
+  width: 70px;
+  margin-top: 20px;
+  color: #fafafa !important;
+  font-weight: 700;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px !important;
+  font-size: 18px;
+}

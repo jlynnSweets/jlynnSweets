@@ -1,12 +1,45 @@
-mat-panel-title{
+::ng-deep .light mat-panel-title{
     color: rgb(68, 68, 64) !important;
     font-weight: 800 !important;
     font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 20px;
 }
-mat-expansion-panel-header {
+::ng-deep .dark mat-panel-title{
+    color: #FF3879 !important;
+    font-weight: 800 !important;
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+::ng-deep .mat-expansion-panel{
+    border-radius: 0px !important;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px !important;
+}
+ .mat-expansion-panel-header {
     cursor: pointer;
     background-color: #ffe9f2 !important;
     font-family: 'Amatic SC';
+}
+
+::ng-deep .light .mat-expansion-panel-body{
+    background-color: #fafafa !important;
+}
+
+::ng-deep .dark .mat-expansion-panel-body{
+    background-color: #3e3e3e !important;
+}
+::ng-deep .light .mat-tab-label{
+    color: rgb(68, 68, 64) !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+::ng-deep .dark .mat-tab-label{
+    color:  #FF3879 !important;
+    font-size: 18px;
+    font-weight: 600;
 }
 ::ng-deep .mat-ink-bar{
     background-color: #FF3879 !important;
@@ -18,6 +51,7 @@ mat-expansion-panel-header {
 ::ng-deep .mat-tab-header-pagination {
     display: none !important;
 }
+
 ::ng-deep .mat-tab-body-content { overflow: hidden!important}
 ::ng-deep .mat-tab-label, .mat-tab-label-active{
     min-width: 40px!important;
@@ -25,9 +59,15 @@ mat-expansion-panel-header {
     margin: 3px!important;
     font-family: 'Amatic SC';
 }
-.page-title{
+::ng-deep .light .page-title{
     font-size: 30px;
     color: rgb(68, 68, 64) !important;
+    font-weight: 900;
+    font-family: 'Amatic SC';
+}
+::ng-deep .dark .page-title{
+    font-size: 30px;
+    color: #fafafa !important;
     font-weight: 900;
     font-family: 'Amatic SC';
 }
@@ -37,8 +77,14 @@ mat-expansion-panel-header {
 ::ng-deep .mat-expansion-indicator::after{
     color: #FF3879 !important;
 }
-.menu-text{
+::ng-deep .light .menu-text{
     font-weight: 700;
     color: rgb(68, 68, 64) !important;
+    font-family: 'Amatic SC';
+}
+
+::ng-deep .dark .menu-text{
+    font-weight: 700;
+    color: #fafafa !important;
     font-family: 'Amatic SC';
 }

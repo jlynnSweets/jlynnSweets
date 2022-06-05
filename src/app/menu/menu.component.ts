@@ -29,10 +29,10 @@ export class MenuComponent implements OnInit {
     ],
     price: [{
       title: 'Half a Dozen',
-      price: '$20'
+      price: '$28'
     }, {
       title: 'Dozen',
-      price: '$30'
+      price: '$40'
     }]
   }];
   public customCupcakes: any = [{
@@ -46,7 +46,7 @@ export class MenuComponent implements OnInit {
     ],
     price: [{
       title: 'Half a Dozen',
-      price: '$25 & up'
+      price: '$28 & up'
     }, {
       title: 'Dozen',
       price: '$40 & up'
@@ -87,19 +87,19 @@ export class MenuComponent implements OnInit {
     ],
     price: [{
       title: 'Half a Dozen',
-      price: '$18'
+      price: '$28'
     }, {
       title: 'Dozen',
-      price: '$28'
+      price: '$40'
     }]
   }];
   public customStrawberry = [{
     price: [{
       title: 'Half a Dozen',
-      price: '$25'
+      price: '$28'
     }, {
       title: 'Dozen',
-      price: '$35'
+      price: '$40'
     }]
   }];
   public classicCakes = [{
@@ -108,10 +108,10 @@ export class MenuComponent implements OnInit {
     ],
     price: [{
       title: '6\'',
-      price: '$35'
+      price: '$65'
     }, {
       title: '8\'',
-      price: '$55'
+      price: '$90'
     }]
   }];
   public cakePops: any = [{
