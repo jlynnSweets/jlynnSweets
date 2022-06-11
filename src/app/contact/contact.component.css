@@ -87,12 +87,11 @@ button:hover:enabled {
 }
 
 ::ng-deep .dark .icc {
-  background-color: #FF3879 !important;
+  background-color: #ffe9f2 !important;
 }
 
 ::ng-deep .light .ic {
   background-color: #ffe9f2;
-  padding: 5px;
   word-wrap: break-word;
   text-align: center !important;
   font-family: 'Amatic SC';
@@ -105,15 +104,14 @@ button:hover:enabled {
 }
 
 ::ng-deep .dark .ic {
-  background-color: #FF3879 !important;
-  padding: 5px;
+  background-color: #ffe9f2 !important;
   word-wrap: break-word;
   text-align: center !important;
   font-family: 'Amatic SC';
   width: 97%;
   word-wrap: break-word;
   text-align: center !important;
-  color: #fafafa !important;
+  color: #FF3879!important;
   font-weight: 600;
   font-size: 18px;
 }
